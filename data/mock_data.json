@@ -1,0 +1,467 @@
+[
+    {
+        "name": "Killua",
+        "age": 4,
+        "breed": "Maine Coon",
+        "weight": 8,
+        "body_temp": 38.5,
+        "vomit": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "owner": "natsuno1116@icloud.com"
+    },
+    {
+        "name": "Bella",
+        "age": 3,
+        "breed": "Sphynx",
+        "weight": 3.5,
+        "body_temp": 39.0,
+        "vomit": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "owner": "natsunohuang@gmail.com"
+    },
+    {
+        "name": "Milo",
+        "age": 5,
+        "breed": "British Shorthair",
+        "weight": 4.2,
+        "body_temp": 38.3,
+        "vomit": [
+            true,
+            false,
+            false,
+            false,
+            true
+        ],
+        "owner": "owner_email@example.com"
+    },
+    {
+        "name": "Luna",
+        "age": 2,
+        "breed": "Siamese",
+        "weight": 3.8,
+        "body_temp": 40.0,
+        "vomit": [
+            false,
+            false,
+            false,
+            false,
+            true
+        ],
+        "owner": "owner2_email@example.com"
+    },
+    {
+        "name": "Simba",
+        "age": 7,
+        "breed": "Ragdoll",
+        "weight": 9.5,
+        "body_temp": 37.5,
+        "vomit": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "owner": "owner3_email@example.com"
+    },
+    {
+        "name": "Oliver",
+        "age": 4,
+        "breed": "Persian",
+        "weight": 4.8,
+        "body_temp": 41.2,
+        "vomit": [
+            false,
+            false,
+            true,
+            false,
+            false
+        ],
+        "owner": "owner4_email@example.com"
+    },
+    {
+        "name": "Charlie",
+        "age": 6,
+        "breed": "Russian Blue",
+        "weight": 5.5,
+        "body_temp": 38.7,
+        "vomit": [
+            false,
+            false,
+            true,
+            true,
+            true
+        ],
+        "owner": "owner4_email@example.com"
+    },
+    {
+        "name": "Lucy",
+        "age": 3,
+        "breed": "American Shorthair",
+        "weight": 3.6,
+        "body_temp": 39.5,
+        "vomit": [
+            false,
+            false,
+            false,
+            true,
+            true
+        ],
+        "owner": "owner5_email@example.com"
+    },
+    {
+        "name": "Leo",
+        "age": 8,
+        "breed": "Scottish Fold",
+        "weight": 8.8,
+        "body_temp": 38.9,
+        "vomit": [
+            true,
+            false,
+            true,
+            false,
+            true
+        ],
+        "owner": "owner6_email@example.com"
+    },
+    {
+        "name": "Max",
+        "age": 5,
+        "breed": "Sphynx",
+        "weight": 4.3,
+        "body_temp": 39.0,
+        "vomit": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "owner": "owner7_email@example.com"
+    },
+    {
+        "name": "Nala",
+        "age": 2,
+        "breed": "Abyssinian",
+        "weight": 3.4,
+        "body_temp": 37.0,
+        "vomit": [
+            true,
+            true,
+            true,
+            false,
+            true
+        ],
+        "owner": "owner8_email@example.com"
+    },
+    {
+        "name": "Jack",
+        "age": 9,
+        "breed": "Ragdoll",
+        "weight": 10.0,
+        "body_temp": 38.4,
+        "vomit": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "owner": "owner9_email@example.com"
+    },
+    {
+        "name": "Molly",
+        "age": 1,
+        "breed": "Bengal",
+        "weight": 2.8,
+        "body_temp": 41.0,
+        "vomit": [
+            true,
+            false,
+            true,
+            true,
+            true
+        ],
+        "owner": "owner10_email@example.com"
+    },
+    {
+        "name": "Coco",
+        "age": 6,
+        "breed": "Siamese",
+        "weight": 3.5,
+        "body_temp": 40.3,
+        "vomit": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "owner": "owner11_email@example.com"
+    },
+    {
+        "name": "Oscar",
+        "age": 7,
+        "breed": "Persian",
+        "weight": 4.9,
+        "body_temp": 38.2,
+        "vomit": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "owner": "owner12_email@example.com"
+    },
+    {
+        "name": "Misty",
+        "age": 4,
+        "breed": "Burmese",
+        "weight": 3.7,
+        "body_temp": 36.9,
+        "vomit": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "owner": "owner13_email@example.com"
+    },
+    {
+        "name": "Toby",
+        "age": 3,
+        "breed": "Savannah",
+        "weight": 6.8,
+        "body_temp": 39.6,
+        "vomit": [
+            false,
+            false,
+            false,
+            false,
+            false
+        ],
+        "owner": "owner14_email@example.com"
+    },
+    {
+        "name": "Willow",
+        "age": 2,
+        "breed": "Maine Coon",
+        "weight": 8.5,
+        "body_temp": 42.0,
+        "vomit": [
+            true,
+            true,
+            true,
+            false,
+            false
+        ],
+        "owner": "owner15_email@example.com"
+    },
+    {
+        "name": "Buddy",
+        "age": 5,
+        "breed": "American Shorthair",
+        "weight": 4.2,
+        "body_temp": 38.6,
+        "vomit": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "owner": "owner16_email@example.com"
+    },
+    {
+        "name": "Sadie",
+        "age": 3,
+        "breed": "British Shorthair",
+        "weight": 3.5,
+        "body_temp": 40.1,
+        "vomit": [
+            true,
+            false,
+            false,
+            true,
+            true
+        ],
+        "owner": "owner17_email@example.com"
+    },
+    {
+        "name": "Rocky",
+        "age": 6,
+        "breed": "Siberian",
+        "weight": 7.3,
+        "body_temp": 38.0,
+        "vomit": [
+            true,
+            false,
+            false,
+            true,
+            false
+        ],
+        "owner": "owner18_email@example.com"
+    },
+    {
+        "name": "Missy",
+        "age": 4,
+        "breed": "Russian Blue",
+        "weight": 5.0,
+        "body_temp": 39.8,
+        "vomit": [
+            false,
+            false,
+            false,
+            true,
+            false
+        ],
+        "owner": "owner19_email@example.com"
+    },
+    {
+        "name": "Dexter",
+        "age": 5,
+        "breed": "Sphynx",
+        "weight": 4.4,
+        "body_temp": 38.7,
+        "vomit": [
+            false,
+            false,
+            true,
+            true,
+            false
+        ],
+        "owner": "owner20_email@example.com"
+    },
+    {
+        "name": "Chloe",
+        "age": 2,
+        "breed": "Savannah",
+        "weight": 7.2,
+        "body_temp": 36.5,
+        "vomit": [
+            true,
+            false,
+            true,
+            true,
+            false
+        ],
+        "owner": "owner21_email@example.com"
+    },
+    {
+        "name": "Mimi",
+        "age": 7,
+        "breed": "Bengal",
+        "weight": 6.0,
+        "body_temp": 38.3,
+        "vomit": [
+            false,
+            true,
+            true,
+            true,
+            false
+        ],
+        "owner": "owner22_email@example.com"
+    },
+    {
+        "name": "Ginger",
+        "age": 4,
+        "breed": "British Shorthair",
+        "weight": 5.5,
+        "body_temp": 40.5,
+        "vomit": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "owner": "owner23_email@example.com"
+    },
+    {
+        "name": "Zoe",
+        "age": 6,
+        "breed": "Maine Coon",
+        "weight": 9.0,
+        "body_temp": 39.2,
+        "vomit": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "owner": "owner24_email@example.com"
+    },
+    {
+        "name": "Jasper",
+        "age": 3,
+        "breed": "Siamese",
+        "weight": 3.9,
+        "body_temp": 37.3,
+        "vomit": [
+            false,
+            true,
+            false,
+            true,
+            true
+        ],
+        "owner": "owner25_email@example.com"
+    },
+    {
+        "name": "Oscar",
+        "age": 5,
+        "breed": "Persian",
+        "weight": 4.0,
+        "body_temp": 40.8,
+        "vomit": [
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "owner": "owner26_email@example.com"
+    },
+    {
+        "name": "Shadow",
+        "age": 8,
+        "breed": "Russian Blue",
+        "weight": 5.1,
+        "body_temp": 36.9,
+        "vomit": [
+            false,
+            true,
+            false,
+            true,
+            false
+        ],
+        "owner": "owner27_email@example.com"
+    },
+    {
+        "name": "Tigger",
+        "age": 4,
+        "breed": "Siberian",
+        "weight": 6.5,
+        "body_temp": 41.5,
+        "vomit": [
+            true,
+            true,
+            false,
+            true,
+            true
+        ],
+        "owner": "owner28_email@example.com"
+    }
+]
