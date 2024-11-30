@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Health Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .cat-card {
+            border: 1px solid #ddd;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .cat-card h3 {
+            margin: 0;
+        }
+        .cat-card p {
+            margin: 5px 0;
+        }
+    </style>
+
+    <script>
+        async function fetchCatData() {
+            try {
+                const response = await fetch('mock_data.json'); 
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch data: ${response.status} ${response.statusText}`);
+                }
+                return await response.json();
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                return [];
+            }
+        }
+
+        async function showAllCats() {
+            const catData = await fetchCatData();
+            displayCats(catData, "All Cats");
+        }
+
+        async function showHealthyCats() {
+            const catData = await fetchCatData();
+            const healthyCats = catData.filter(cat => 
+                cat.body_temp >= 37 && cat.body_temp <= 39 &&
+                !cat.vomit.includes(true)
+            );
+            displayCats(healthyCats, "Healthy Cats");
+        }
+
+        async function showCatsNeedingAttention() {
+            const catData = await fetchCatData();
+            const attentionCats = catData.filter(cat => 
+                cat.body_temp > 39 || cat.body_temp < 37 || 
+                cat.vomit.filter(v => v).length >= 3
+            );
+            displayCats(attentionCats, "Cats Needing Attention");
+        }
+
+        function displayCats(catList, title) {
+            const container = document.getElementById("result");
+            container.innerHTML = `<h2>${title}</h2>`;
+
+            if (catList.length === 0) {
+                container.innerHTML += "<p>No cats found for this category.</p>";
+                return;
+            }
+
+            catList.forEach(cat => {
+                const catCard = `
+                    <div class="cat-card">
+                        <h3>${cat.name}</h3>
+                        <p><strong>Age:</strong> ${cat.age} years</p>
+                        <p><strong>Breed:</strong> ${cat.breed}</p>
+                        <p><strong>Weight:</strong> ${cat.weight} kg</p>
+                        <p><strong>Body Temperature:</strong> ${cat.body_temp} °C</p>
+                        <p><strong>Owner:</strong> ${cat.owner}</p>
+                        <p><strong>Vomit History:</strong> ${cat.vomit.map(v => v ? "Yes" : "No").join(", ")}</p>
+                    </div>
+                `;
+                container.innerHTML += catCard;
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1>Cat Health Tracker</h1>
+    <p>Use the buttons below to view and analyze the health status of cats.</p>
+
+    <button onclick="showAllCats()">Show All Cats</button>
+    <button onclick="showHealthyCats()">Show Healthy Cats</button>
+    <button onclick="showCatsNeedingAttention()">Show Cats Needing Attention</button>
+
+    <div id="result"></div>
+</body>
+</html>

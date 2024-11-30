@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Check</title>
+    <script>
+        let collectedData = [];
+
+        function collectData(event) {
+            event.preventDefault(); 
+
+            const name = document.getElementById("name").value;
+            const ownerName = document.getElementById("owner_name").value;
+            const age = document.getElementById("age").value;
+            const breed = document.getElementById("breed").value;
+            const weight = document.getElementById("weight").value;
+            const bodyTemp = document.getElementById("body_temp").value;
+            const vomit = document.getElementById("vomit").checked;
+
+
+            const singleData = {
+                name: name,
+                ownerName: ownerName,
+                age: parseFloat(age),
+                breed: breed,
+                weight: parseFloat(weight),
+                bodyTemp: parseFloat(bodyTemp),
+                vomit: vomit
+            };
+
+            collectedData.push(singleData);
+
+            document.getElementById("current-data").textContent = JSON.stringify(collectedData, null, 2);
+
+            alert("Data added successfully!");
+        }
+
+        function saveAllData() {
+            if (collectedData.length === 0) {
+                alert("No data to save!");
+                return;
+            }
+
+            const jsonData = JSON.stringify(collectedData, null, 2);
+
+            const blob = new Blob([jsonData], { type: "application/json" });
+
+            const a = document.createElement("a");
+            a.href = URL.createObjectURL(blob);
+            a.download = "consolidated_data.json"; 
+            a.style.display = "none";
+
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+
+            alert("All data saved to consolidated_data.json!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Cat Health Check</h1>
+    <form onsubmit="collectData(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="owner_name">Owner Name:</label>
+        <input type="text" id="owner_name" name="owner_name" required><br>
+
+        <label for="age">Age (years):</label>
+        <input type="number" id="age" name="age" step="0.1" required><br>
+
+        <label for="breed">Breed:</label>
+        <input type="text" id="breed" name="breed" required><br>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" name="weight" step="0.1" required><br>
+
+        <label for="body_temp">Body Temperature (°C):</label>
+        <input type="number" id="body_temp" name="body_temp" step="0.1" required><br>
+
+        <label for="vomit">Vomit:</label>
+        <input type="checkbox" id="vomit" name="vomit"><br><br>
+
+        <button type="submit">Add Data</button>
+    </form>
+
+    <button style="display: block; margin-bottom: 10px;" onclick="saveAllData()">Save All Data</button>
+    <button style="display: block;" onclick="location.href='1.main page.html'">Back to Main Page</button>
+    
+
+    <h2>Current Collected Data:</h2>
+    <pre id="current-data">[]</pre>
+</body>
+</html>
